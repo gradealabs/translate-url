@@ -1,0 +1,23 @@
+{
+  "name": "@gradealabs/translate-url",
+  "version": "0.0.1",
+  "description": "Transform URLs so that they contain different IETF language tags",
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
+  "scripts": {
+    "test": "mocha --opts .mocha.opts src/*.test.ts",
+    "test:watch": "mocha --opts .mocha.ops --watch --watch-extensions .ts src/*.test.ts",
+    "build": "tsc -p .",
+    "prepublish": "tsc -p ."
+  },
+  "keywords": [],
+  "author": "Darren Schnare <dschnare@gradealabs.com>",
+  "license": "BSD",
+  "devDependencies": {
+    "@types/mocha": "^5.2.0",
+    "@types/node": "^10.1.2",
+    "mocha": "^5.2.0",
+    "ts-node": "^6.0.5",
+    "typescript": "^2.8.3"
+  }
+}
