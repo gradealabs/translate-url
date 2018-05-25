@@ -8,10 +8,23 @@ Transform URLs so that they contain different IETF language tags.
 npm install gradealabs/translate-url#0.0.1 --save
 ```
 
-## Quick Start
+## Quick Start Node
+
+```js
+import { URL } from 'url'
+import { translateUrlFromPathname } from '@gradealabs/translate-url'
+
+const frUrl = translateUrlFromPathname(new URL('http://example.com'), 'en', 'fr')
+frUrl.toString() // 'http://example.com/fr'
+```
+
+## Quick Start Browser
 
 ```js
 import { translateUrlFromPathname } from '@gradealabs/translate-url'
+
+// Where URL is a WHATWG compliant URL constructor.
+// See: https://developer.mozilla.org/en-US/docs/Web/API/URL
 
 const frUrl = translateUrlFromPathname(new URL('http://example.com'), 'en', 'fr')
 frUrl.toString() // 'http://example.com/fr'
