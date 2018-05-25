@@ -5,7 +5,7 @@ Transform URLs so that they contain different IETF language tags.
 ## Install
 
 ```
-npm install gradealabs/translate-url#0.0.1 --save
+npm install gradealabs/translate-url#0.0.2 --save
 ```
 
 ## Quick Start Node
