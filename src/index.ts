@@ -28,8 +28,8 @@ function lastIndexOfPattern (str: string, regex: RegExp) {
  * inserted into the pathname.
  *
  * Path segment transform rules:
- * - `'/{fromLang}'` -> `'/path/{toLang}'`
- * - `'/path-{fromLang}'` -> `'/path-{toLang}'`
+ * - `'{fromLang}'` -> `'{toLang}'`
+ * - `'path-{fromLang}'` -> `'path-{toLang}'`
  *
  * Index path segment transform rules:
  * - `'/'` -> `'/{toLang}'`
