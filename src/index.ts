@@ -93,7 +93,7 @@ export function translateUrlByHostname (url: URL, fromLang: string, toLang: stri
 
   // If the URL given equals the rootHostname then the new URL will have the
   // hostname: {toLang}.{rootHostname}
-  if (rootHostname && urlCopy.pathname === '/' && urlCopy.hostname === rootHostname) {
+  if (rootHostname && urlCopy.hostname === rootHostname) {
     urlCopy.hostname = toLang + '.' + rootHostname
     return urlCopy
   }
